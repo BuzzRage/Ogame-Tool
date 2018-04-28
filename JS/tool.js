@@ -1,4 +1,5 @@
 var curr_resources = [];
+var prod = [];
 
 function ogame_tool(){
 	var continuer = 1;
@@ -32,6 +33,16 @@ function get_resources(){
 	curr_resources.push(document.getElementById("resources_deuterium").innerHTML);
 	//curr_resources.push(document.getElementById("resources_darkmatter").innerHTML);
 	curr_resources.push(document.getElementById("resources_energy").innerHTML);
+}
+
+function get_prod(){
+	prod = [];
+	
+	// Not working
+	prod.push(document.getElementById("metal_box").title);
+	prod.push(document.getElementById("crystal_box").title);
+	prod.push(document.getElementById("deuterium_box").title);
+	prod.push(document.getElementById("energy_box").title);
 }
 
 function how_much_resources_in_time(){
